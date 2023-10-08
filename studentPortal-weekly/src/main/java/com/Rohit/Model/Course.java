@@ -23,9 +23,9 @@ public class Course {
     private String corDuration;
 
     //many to many with set of students;
-//    @ManyToMany
-//    @JoinTable(name = "studen_course", joinColumns = @JoinColumn(name = "std_id"),inverseJoinColumns = @JoinColumn(name = "cor_id"))
-//    Set<Student> stdSet;
+   @ManyToMany
+   @JoinTable(name = "studen_course", joinColumns = @JoinColumn(name = "std_id"),inverseJoinColumns = @JoinColumn(name = "cor_id"))
+   Set<Student> stdSet;
 
 
 }
